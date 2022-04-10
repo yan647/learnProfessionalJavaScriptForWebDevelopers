@@ -17,6 +17,11 @@ class Counter {
                         done: true, value: undefined,
                     }
                 }
+            },
+            return() {
+                return {
+                    done: true,
+                }
             }
         };
     }
@@ -25,9 +30,18 @@ class Counter {
 let counter = new Counter(4);
 
 for (let a of counter) {
+    if (a > 2) {
+        break;
+    }
     console.log(a);
 }
 
-for (let a of counter) {
-    console.log(a);
+try {
+    for (let a of counter) {
+        if (a > 2) {
+            throw 'err';
+        }
+        console.log(a);
+    }
+} catch (err) {
 }

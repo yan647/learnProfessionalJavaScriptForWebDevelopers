@@ -1,0 +1,11 @@
+{
+  "name": "learnProfessionalJavaScriptForWebDevelopers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yan647/learnProfessionalJavaScriptForWebDevelopers.git",
+  "author": "刘水清 <yan647@aliyun.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nvm": "^0.0.4"
+  }
+}
